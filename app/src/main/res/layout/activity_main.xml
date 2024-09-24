@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#03A9F4"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="193dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#0003A9F4"
+        android:onClick="sendToActivity2"
+        android:text="לחץ כדי לעבור למסך התוצאות"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBlue" />
+
+    <Button
+        android:id="@+id/btnRed"
+        android:layout_width="170dp"
+        android:layout_height="119dp"
+        android:layout_marginBottom="112dp"
+        android:backgroundTint="#F44336"
+        android:text="לחיצה ארוכה בעבור שתי נקודות"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnBlue"
+        android:layout_width="170dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#03A9F4"
+        android:text="לחיצה קצרה בעבור נקודה"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
